@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCountry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#D0FAEE"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivCountryPoster"
+            android:layout_width="60dp"
+
+
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#000000"
+
+                android:id="@+id/tvCountryName"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                  android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+
+
+                >
+
+            <TextView
+
+
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+
+
+                android:id="@+id/tvCountryTotalCases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                />
+
+
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#000000"
+
+                android:id="@+id/tvCountryDeath"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                 />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

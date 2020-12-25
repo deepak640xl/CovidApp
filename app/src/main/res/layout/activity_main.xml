@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.MainActivity">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/white">
+
+
+        <ImageView
+            android:id="@+id/simpleImageView"
+            android:layout_width="match_parent"
+
+            android:background="@drawable/back"
+
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/_covid" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:background="@drawable/mask"
+            android:id="@+id/cv"
+
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_height="200dp" >
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mask">
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="80dp"
+                android:id="@+id/cases"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cases Worldwide"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="200dp"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+
+            android:text="Country Wise Cases"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+
+            android:id="@+id/btn"
+
+
+            android:background="@drawable/back"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
